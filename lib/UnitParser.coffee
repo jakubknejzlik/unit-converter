@@ -6,15 +6,22 @@ systems = {
 }
 
 class UnitParser
-  constructor:(@value)->
+  constructor:(@value,systemName)->
     @unitSymbol = getUnit(@value)
     @baseValue = Number(@value.replace(@unitSymbol,''))
-    for name,system of systems
+    if systemName
+      system = systems[systemName]
       unit = @_getUnitFromSystem(@unitSymbol,system)
       if unit
         @unit = unit
         @system = system
-        break
+    else
+      for name,system of systems
+        unit = @_getUnitFromSystem(@unitSymbol,system)
+        if unit
+          @unit = unit
+          @system = system
+          break
 
     if not @system
       throw new Error('unknown unit system for ' + @value)

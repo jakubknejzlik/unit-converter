@@ -8,6 +8,11 @@ module.exports = {
     's':{ratio:1000},
     'm':{ratio:60*1000},
     'h':{ratio:3600*1000},
-    'd':{ratio:3600*1000*24}
+    'd':{ratio:3600*1000*24},
+    'w':{ratio:3600*1000*24*7}
+  },
+  aliases:{
+    'sec':'s',
+    'min':'m'
   }
 }
