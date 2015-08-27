@@ -5,5 +5,9 @@
   "keywords": "units,parsing,unit system,converting",
   "dependencies": {
     "get-unit": "1.0.1"
-  }
+  },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jakubknejzlik/unit-parser.git"
+    }
 }
