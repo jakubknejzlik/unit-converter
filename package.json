@@ -1,6 +1,6 @@
 {
   "name": "unit-parser",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Javascript unit parsing. Convert string formatted amounts to numbers (eg. 1m|60s -> 60000)",
   "keywords": "units,parsing,unit system,converting",
   "dependencies": {
