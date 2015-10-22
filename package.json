@@ -8,7 +8,7 @@
     "test": "mocha test"
   },
   "dependencies": {
-    "get-unit": "1.0.1"
+    "get-unit": "^2.0.1"
   },
   "repository": {
     "type": "git",
