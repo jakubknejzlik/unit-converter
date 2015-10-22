@@ -1,5 +1,5 @@
 var assert = require('assert');
-var unitParser = require('../index')
+var convert = require('../index')
 
 describe('unit parsing',function(){
     it('should parse units',function(){
@@ -7,7 +7,7 @@ describe('unit parsing',function(){
         var units = ['kb','s','h'];
 
         for(var i in values){
-            var p = unitParser(values[i]);
+            var p = convert(values[i]);
             assert.equal(p.getUnit(),units[i]);
         }
     })
@@ -17,7 +17,7 @@ describe('unit parsing',function(){
         var bases = [20*1000,200*3600*1000];
 
         for(var i in values){
-            var p = unitParser(values[i],'time');
+            var p = convert(values[i],'time');
             assert.equal(p.toBase(),bases[i]);
         }
     })
@@ -33,7 +33,7 @@ describe('unit parsing',function(){
 
         for(var i in values){
             var value = values[i];
-            var p = unitParser(value.input);
+            var p = convert(value.input);
             assert.equal(p.to(value.unit),value.result);
         }
     })

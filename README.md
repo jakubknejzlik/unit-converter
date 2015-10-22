@@ -1,23 +1,23 @@
-# unit-parser
+# convert
 
 Use convenient format for writing amounts and easily convert them to useful numbers.
 
-`npm install unit-parser`
+`npm install convert`
 
 # Example
 
-	var unitParser = require('unit-parser');
+	var convert = require('convert');
 
-	unitParser('10s').to('ms');
+	convert('10s').to('ms');
 	// -> 10000
 
-	unitParser('1h').to('ms');
+	convert('1h').to('ms');
 	// -> 3600000
 
-	unitParser('2KB').to('B');
+	convert('2KB').to('B');
 	// -> 2048
 
-	unitParser('1MB').to('B');
+	convert('1MB').to('B');
 	// -> 1048576
 
 

@@ -1,13 +1,20 @@
 {
-  "name": "unit-parser",
-  "version": "0.0.7",
-  "description": "Javascript unit parsing. Convert string formatted amounts to numbers (eg. 1m|60s -> 60000)",
-  "keywords": "units,parsing,unit system,converting",
+  "name": "convert",
+  "version": "0.1.0",
+  "description": "Javascript generic unit converter.",
+  "keywords": "units,parsing,unit system,convert,metric,binary,unit converter",
+  "license": "mit",
+  "scripts": {
+    "test": "mocha test"
+  },
   "dependencies": {
     "get-unit": "1.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakubknejzlik/unit-parser.git"
+    "url": "https://github.com/jakubknejzlik/convert.git"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
   }
 }
