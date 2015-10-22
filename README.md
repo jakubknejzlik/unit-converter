@@ -1,5 +1,7 @@
 # convert
 
+[![Build Status](https://travis-ci.org/jakubknejzlik/convert.svg?branch=master)](https://travis-ci.org/jakubknejzlik/convert)
+
 Use convenient format for writing amounts and easily convert them to useful numbers.
 
 `npm install convert`
