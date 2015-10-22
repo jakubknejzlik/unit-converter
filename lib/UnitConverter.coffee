@@ -5,7 +5,7 @@ systems = {
   'byte':require('./systems/byte')
 }
 
-class UnitParser
+class UnitConverter
   constructor:(@value,systemName)->
     @unitSymbol = getUnit(@value)
     @baseValue = Number(@value.replace(@unitSymbol,''))
@@ -45,4 +45,4 @@ class UnitParser
   toBase:()->
     return @to(@system.baseUnit)
 
-module.exports = UnitParser
+module.exports = UnitConverter

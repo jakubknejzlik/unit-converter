@@ -1,4 +1,4 @@
-UnitParser = require('./lib/UnitParser');
+UnitConverter = require('./lib/UnitConverter');
 
 module.exports = (value,systemName)->
-  return new UnitParser(value,systemName)
+  return new UnitConverter(value,systemName)

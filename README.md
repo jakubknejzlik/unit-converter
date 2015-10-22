@@ -1,14 +1,14 @@
 # convert
 
-[![Build Status](https://travis-ci.org/jakubknejzlik/convert.svg?branch=master)](https://travis-ci.org/jakubknejzlik/convert)
+[![Build Status](https://travis-ci.org/jakubknejzlik/unit-converter.svg?branch=master)](https://travis-ci.org/jakubknejzlik/converunit-converter)
 
 Use convenient format for writing amounts and easily convert them to useful numbers.
 
-`npm install convert`
+`npm install unit-converter`
 
 # Example
 
-	var convert = require('convert');
+	var convert = require('unit-converter');
 
 	convert('10s').to('ms');
 	// -> 10000

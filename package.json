@@ -1,5 +1,5 @@
 {
-  "name": "convert",
+  "name": "unit-converter",
   "version": "1.0.0",
   "description": "Javascript generic unit converter.",
   "keywords": "units,parsing,unit system,convert,metric,binary,unit converter",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakubknejzlik/convert.git"
+    "url": "https://github.com/jakubknejzlik/unit-converter.git"
   },
   "devDependencies": {
     "mocha": "^2.3.3"
