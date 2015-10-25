@@ -8,17 +8,26 @@ describe('unit parsing',function(){
 
         for(var i in values){
             var p = converter(values[i]);
-            assert.equal(p.getUnit(),units[i]);
+            assert.equal(p.getUnitSymbol(),units[i]);
         }
     })
 
     it('should converter unit to base',function(){
         var values = ['20s','200h'];
-        var bases = [20*1000,200*3600*1000];
+        var bases = ['20000',200*3600*1000];
 
         for(var i in values){
-            var p = converter(values[i],'time');
+            var p = converter(values[i]);
             assert.equal(p.toBase(),bases[i]);
+        }
+    })
+
+    it('should converter to unit from base',function(){
+        var bases = [20*1000,200*3600*1000];
+
+        for(var i in bases){
+            var p = converter(bases[i]);
+            assert.equal(p.to('s'),bases[i]/1000);
         }
     })
 
