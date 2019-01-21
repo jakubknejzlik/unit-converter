@@ -8,7 +8,7 @@ Use convenient format for writing amounts and easily convert them to useful numb
 
 # Example
 
-    var convert = require('unit-converter');
+    import { convert } from 'unit-converter';
 
     convert('10s').to('ms');
     // -> 10000
