@@ -1,6 +1,6 @@
 {
   "name": "unit-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Javascript generic unit converter.",
   "keywords": "units,parsing,unit system,convert,metric,binary,unit converter",
   "license": "mit",
