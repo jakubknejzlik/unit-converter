@@ -2,19 +2,31 @@
   "name": "unit-converter",
   "version": "1.0.3",
   "description": "Javascript generic unit converter.",
-  "keywords": "units,parsing,unit system,convert,metric,binary,unit converter",
+  "keywords": [
+    "units",
+    "parsing",
+    "unit system",
+    "convert",
+    "metric",
+    "binary",
+    "unit converter"
+  ],
   "license": "mit",
   "scripts": {
-    "test": "mocha test"
+    "test": "jest"
   },
-  "dependencies": {
-    "get-unit": "^2.0.1"
-  },
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/jakubknejzlik/unit-converter.git"
   },
   "devDependencies": {
-    "mocha": "^2.3.3"
+    "@types/jest": "^23.3.13",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.4"
   }
 }
